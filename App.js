@@ -1,7 +1,7 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import {createStore} from 'redux';
-import {Provider} from 'react-redux';
+import { View } from 'react-native';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
 import { Header } from './src/components/common';
 import reducers from './src/reducers';
@@ -9,23 +9,11 @@ import reducers from './src/reducers';
 export default class App extends React.Component {
   render() {
     return (
-      <Provider store={createStore(reducers)}>
-        <Header headerText="Tech Stack" />
-        <View style={styles.container}>
-          <Text>Open up App.js to start working on your app!</Text>
-          <Text>Changes you make will automatically reload.</Text>
-          <Text>Shake your phone to open the developer menu.</Text>
+      <Provider store={ createStore(reducers) }>
+        <View>
+          <Header headerText="Tech Stack" />
         </View>
       </Provider>
-    );
+      );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-});

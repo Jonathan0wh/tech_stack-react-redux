@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "esformatter-jsx": "^8.0.1",
     "eslint-config-react-native": "^1.6.0",
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-prettier": "^2.1.2",
